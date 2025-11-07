@@ -1,0 +1,81 @@
+{
+  "top_lineage": 2,
+  "success_metric": "final_alive",
+  "final_alive": {
+    "0": 0,
+    "1": 13,
+    "2": 7908,
+    "3": 1,
+    "4": 362,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0
+  },
+  "total_births": {
+    "8": 770,
+    "1": 2057,
+    "4": 2120,
+    "5": 145,
+    "7": 102,
+    "2": 16896,
+    "3": 83,
+    "0": 92
+  },
+  "lineage_genes": {
+    "0": {
+      "replication_rate": 0.2427,
+      "death_rate": 0.002,
+      "mutation_rate": 0.0225,
+      "metabolism": 0.4177
+    },
+    "1": {
+      "replication_rate": 0.3607,
+      "death_rate": 0.0039,
+      "mutation_rate": 0.0433,
+      "metabolism": 0.343
+    },
+    "2": {
+      "replication_rate": 0.3361,
+      "death_rate": 0.0026,
+      "mutation_rate": 0.0131,
+      "metabolism": 0.1963
+    },
+    "3": {
+      "replication_rate": 0.1046,
+      "death_rate": 0.0009,
+      "mutation_rate": 0.091,
+      "metabolism": 0.3352
+    },
+    "4": {
+      "replication_rate": 0.2455,
+      "death_rate": 0.0045,
+      "mutation_rate": 0.0256,
+      "metabolism": 0.2625
+    },
+    "5": {
+      "replication_rate": 0.1922,
+      "death_rate": 0.0046,
+      "mutation_rate": 0.0242,
+      "metabolism": 0.3655
+    },
+    "6": {
+      "replication_rate": 0.4194,
+      "death_rate": 0.0099,
+      "mutation_rate": 0.0447,
+      "metabolism": 0.3787
+    },
+    "7": {
+      "replication_rate": 0.1164,
+      "death_rate": 0.0012,
+      "mutation_rate": 0.0433,
+      "metabolism": 0.353
+    },
+    "8": {
+      "replication_rate": 0.3917,
+      "death_rate": 0.0005,
+      "mutation_rate": 0.0124,
+      "metabolism": 0.4238
+    }
+  }
+}
