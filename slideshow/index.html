@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal.js Slideshow</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Hello World!</h1>
+                <p>Welcome to reveal.js</p>
+            </section>
+            <section>
+                <h2>Second Slide</h2>
+                <p>This is a basic reveal.js presentation</p>
+            </section>
+            <section>
+                <h2>Third Slide</h2>
+                <p>Use arrow keys to navigate</p>
+                <ul>
+                    <li>← → for horizontal navigation</li>
+                    <li>↑ ↓ for vertical navigation</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: true
+        });
+    </script>
+</body>
+</html>
