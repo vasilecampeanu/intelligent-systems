@@ -1,0 +1,21 @@
+name: agents-mas
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - networkx
+  - jupyterlab
+  - ipywidgets
+  - pip
+  - tqdm
+  # Dev tools (optional but handy)
+  - black
+  - ruff
+  - pytest
+  - pre-commit
+  - pip:
+      - "mesa[viz,network,rec]"
