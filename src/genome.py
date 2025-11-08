@@ -21,10 +21,10 @@ class Genome:
 
     def phenotype(self):
         return {
-            "replication_rate": GENE_SPEC["rep_gene"][2]   (self.raw["rep_gene"]),
-            "mutation_rate":    GENE_SPEC["mut_gene"][2]   (self.raw["mut_gene"]),
+            "replication_rate": GENE_SPEC["rep_gene"]  [2] (self.raw["rep_gene"]  ),
+            "mutation_rate":    GENE_SPEC["mut_gene"]  [2] (self.raw["mut_gene"]  ),
             "death_rate":       GENE_SPEC["death_gene"][2] (self.raw["death_gene"]),
-            "metabolism":       GENE_SPEC["met_gene"][2]   (self.raw["met_gene"]),
+            "metabolism":       GENE_SPEC["met_gene"]  [2] (self.raw["met_gene"]  ),
         }
 
     def mutated_copy(self, rnd: random.Random) -> "Genome":

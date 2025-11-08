@@ -3,28 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reveal.js Slideshow</title>
+    <title>Birth of the First Replicator</title>
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal ul { font-size: 0.85em; }
+        .reveal .small { font-size: 0.7em; }
+        .reveal .highlight { color: #ffd700; font-weight: bold; }
+        .reveal img { max-height: 500px; }
+        .reveal .concept-box { 
+            background: rgba(255,255,255,0.1); 
+            padding: 15px; 
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .reveal .emphasis { color: #4da6ff; }
+    </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
+            <!-- Title Slide -->
             <section>
-                <h1>Hello World!</h1>
-                <p>Welcome to reveal.js</p>
+                <h2>Birth of the First Replicator</h2>
+                <h4>Understanding the Origins of Self-Replication</h4>
+                <p style="margin-top: 50px;">"Agents and Multi-Agent Systems"</p>
             </section>
+
+            <!-- Part 1: Theoretical Foundation -->
             <section>
-                <h2>Second Slide</h2>
-                <p>This is a basic reveal.js presentation</p>
+                <section>
+                    <h2>Part 1: Theoretical Foundation</h2>
+                    <p>Understanding replicators and the origins of life</p>
+                </section>
+
+                <section>
+                    <h2>The Fundamental Question</h2>
+                    <div class="concept-box">
+                        <p style="font-size: 1.2em;">How do self-replicating entities emerge and evolve?</p>
+                    </div>
+                    <ul style="margin-top: 30px;">
+                        <li>What conditions allow replicators to arise from non-living matter?</li>
+                        <li>What traits determine survival in competitive environments?</li>
+                        <li>How does natural selection shape replicator populations?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>What is a Replicator?</h2>
+                    <div class="concept-box">
+                        <p><span class="emphasis">Replicator:</span> An entity capable of creating copies of itself</p>
+                    </div>
+                    <ul style="margin-top: 30px;">
+                        <li><strong>Heredity:</strong> Offspring resemble their parents</li>
+                        <li><strong>Variation:</strong> Imperfect copying introduces differences</li>
+                        <li><strong>Selection:</strong> Some variants reproduce more successfully</li>
+                    </ul>
+                    <p style="margin-top: 30px;" class="small">These three properties are sufficient for evolution by natural selection</p>
+                </section>
+
+                <section>
+                    <h2>The Origins Problem</h2>
+                    <ul>
+                        <li><strong>Prebiotic Earth:</strong> No DNA, no cells, no life</li>
+                        <li><strong>Chemical Building Blocks:</strong> Simple molecules in primordial soup</li>
+                        <li><strong>The Gap:</strong> How did the first self-replicating molecule emerge?</li>
+                        <li><strong>RNA World Hypothesis:</strong> RNA as both information carrier and catalyst</li>
+                    </ul>
+                    <p style="margin-top: 30px;" class="small">The first replicator had to be simple enough to form spontaneously, yet complex enough to replicate and be stable</p>
+                </section>
             </section>
+
+            <!-- Part 2: Modeling Approach -->
             <section>
-                <h2>Third Slide</h2>
-                <p>Use arrow keys to navigate</p>
-                <ul>
-                    <li>← → for horizontal navigation</li>
-                    <li>↑ ↓ for vertical navigation</li>
+                <section>
+                    <h2>Part 2: Modeling Approach</h2>
+                    <p>Using agent-based simulation to study replicator evolution</p>
+                </section>
+
+                <section>
+                    <h2>Agent-Based Modeling</h2>
+                    <p>Simulation as a tool to understand replicator dynamics:</p>
+                    <ul>
+                        <li><strong>Digital replicators</strong> competing in a shared environment</li>
+                        <li><strong>Resource constraints</strong> creating selection pressure</li>
+                        <li><strong>Heritable traits</strong> that affect survival and reproduction</li>
+                        <li><strong>Mutation</strong> introducing variation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Simulation Parameters</h2>
+                    <ul>
+                        <li><strong>Environment:</strong> 40×40 grid with regenerating resources</li>
+                        <li><strong>Population:</strong> 9 founder lineages with distinct traits</li>
+                        <li><strong>Traits:</strong> Replication rate, death rate, mutation rate, metabolism</li>
+                        <li><strong>Duration:</strong> 100 time steps</li>
+                        <li><strong>Observation:</strong> Which trait combinations lead to dominance?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Heritable Traits in Our Model</h2>
+                    <div class="concept-box">
+                        <p><strong>Replication Rate:</strong> How quickly an entity reproduces</p>
+                        <p><strong>Death Rate:</strong> Probability of spontaneous failure</p>
+                        <p><strong>Mutation Rate:</strong> Rate of change in offspring traits</p>
+                        <p><strong>Metabolism:</strong> Energy cost of existence</p>
+                    </div>
+                    <p style="margin-top: 30px;" class="small">Trade-offs: Fast replication requires energy; low mutation maintains successful traits but reduces adaptability</p>
+                </section>
+            </section>
+
+            <!-- Part 3: Results & Analysis -->
+            <section>
+                <section>
+                    <h2>Part 3: Results & Analysis</h2>
+                    <p>What we observed in the simulation</p>
+                </section>
+
+                <section>
+                    <h2>Observing Natural Selection</h2>
+                    <img src="../output/1_competition_timeline.png" alt="Competition Timeline">
+                    <p class="small">Population dynamics over 100 time steps - natural selection in action</p>
+                </section>
+
+                <section>
+                    <h2>Selection Pressure Results</h2>
+                    <div style="font-size: 1.5em; margin: 30px 0;">
+                        <p class="highlight">Lineage 2 dominated the population</p>
+                        <p style="font-size: 0.6em;">Final population: 7,908 (out of ~8,000 total)</p>
+                    </div>
+                    <p>By step 50, one lineage achieved near-total dominance</p>
+                    <p class="small">This demonstrates how advantageous trait combinations can sweep through a population</p>
+                </section>
+
+                <section>
+                    <h2>The Winning Trait Combination</h2>
+                    <ul>
+                        <li><span class="highlight">Higher replication rate</span> (25% above average)</li>
+                        <li><span class="highlight">Lower death rate</span> (better survival)</li>
+                        <li><span class="highlight">Lower metabolism</span> (42% more energy efficient)</li>
+                        <li><span class="highlight">Lower mutation rate</span> (preserved successful traits)</li>
+                    </ul>
+                    <p style="margin-top: 40px;">Key insight: <span class="emphasis">Energy efficiency was decisive</span></p>
+                </section>
+
+                <section>
+                    <h2>Replication vs Death Rate</h2>
+                    <img src="../output/2_replication_vs_death.png" alt="Replication vs Death">
+                    <p class="small">Bubble size = final population. Sweet spot: fast replication + low mortality</p>
+                </section>
+
+                <section>
+                    <h2>Metabolism vs Mutation Rate</h2>
+                    <img src="../output/3_metabolism_vs_mutation.png" alt="Metabolism vs Mutation">
+                    <p class="small">Lower metabolism = more energy for reproduction</p>
+                </section>
+
+                <section>
+                    <h2>Trait Comparison Across Lineages</h2>
+                    <img src="../output/4_gene_heatmap.png" alt="Gene Heatmap">
+                    <p class="small">Visual comparison reveals the winning combination</p>
+                </section>
+
+                <section>
+                    <h2>Competition Outcomes</h2>
+                    <img src="../output/5_statistics_table.png" alt="Statistics Table">
+                    <p class="small">Lineage 2: 7,908 | Lineage 4: 362 | Lineage 1: 13</p>
+                </section>
+
+                <section>
+                    <h2>Full Lineage Analysis</h2>
+                    <img src="../output/6_lineage_genes_table.png" alt="Lineage Genes">
+                    <p class="small">Gold = winner, Green = survivors, Gray = extinct</p>
+                </section>
+            </section>
+
+            <!-- Part 4: Synthesis & Implications -->
+            <section>
+                <section>
+                    <h2>Part 4: Synthesis & Implications</h2>
+                    <p>What this tells us about life's origins</p>
+                </section>
+
+                <section>
+                    <h2>Connecting to Replicator Theory</h2>
+                    <ul>
+                        <li><strong>Fitness Landscape:</strong> Not all trait combinations are equally viable</li>
+                        <li><strong>Resource Competition:</strong> Limited resources create selection pressure</li>
+                        <li><strong>Optimal Solutions:</strong> Evolution finds efficient trait combinations</li>
+                        <li><strong>Stability:</strong> Low mutation preserves successful adaptations</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Universal Principles Observed</h2>
+                    <div class="concept-box">
+                        <p><strong>1. Energy efficiency is critical</strong></p>
+                        <p>Low metabolism beat high replication rate alone</p>
+                    </div>
+                    <div class="concept-box">
+                        <p><strong>2. Balance matters</strong></p>
+                        <p>Not too fast (wastes energy), not too slow (outcompeted)</p>
+                    </div>
+                    <div class="concept-box">
+                        <p><strong>3. Stability preserves success</strong></p>
+                        <p>Low mutation maintained the winning combination</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Lessons for Understanding Life's Origins</h2>
+                    <ul>
+                        <li><strong>Efficiency matters early:</strong> First replicators needed low metabolic costs</li>
+                        <li><strong>Selection is powerful:</strong> Advantageous traits spread rapidly</li>
+                        <li><strong>Simple rules, complex outcomes:</strong> Evolution emerges from basic principles</li>
+                        <li><strong>Competition drives innovation:</strong> Resource limits force optimization</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Relevance to Prebiotic Evolution</h2>
+                    <p>Our model demonstrates principles that likely applied to early replicators:</p>
+                    <ul>
+                        <li>RNA molecules with lower error rates would preserve successful sequences</li>
+                        <li>More efficient catalysts would replicate faster with limited resources</li>
+                        <li>Competition for nucleotides drove selection for efficiency</li>
+                        <li>Stable replicators could accumulate beneficial modifications</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Conclusion -->
+            <section>
+                <h2>Conclusion</h2>
+                <div class="concept-box">
+                    <p style="font-size: 1.2em;"><em>"The fittest replicator balances reproduction with efficiency"</em></p>
+                </div>
+                <ul style="margin-top: 30px;">
+                    <li>Energy efficiency was the decisive competitive advantage</li>
+                    <li>Natural selection rapidly amplifies successful trait combinations</li>
+                    <li>Simple evolutionary rules can explain complex population dynamics</li>
+                    <li>Agent-based models illuminate principles of life's origins</li>
                 </ul>
+                <p style="margin-top: 50px;">Questions?</p>
             </section>
         </div>
     </div>
@@ -37,7 +261,9 @@
             controls: true,
             progress: true,
             center: true,
-            slideNumber: true
+            slideNumber: true,
+            width: 1200,
+            height: 700
         });
     </script>
 </body>
